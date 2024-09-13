@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Car Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <!-- Your main content here -->
+    <header class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Car Garage</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+            <li><a href="blog.html" class="hover:text-gray-400">Blog</a></li>
+            <li><a href="services.html" class="hover:text-gray-400">Services</a></li>
+            <li><a href="projects.html" class="hover:text-gray-400">Projects</a></li>
+            <li><a href="team.html" class="hover:text-gray-400">Our Team</a></li>
+            <li><a href="contactus.html" class="hover:text-gray-400">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <style>
+      /* Navigation Bar Styles */
+      .navbar {
+        background-color: #1a202c;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar-brand {
+        font-size: 1.5rem;
+        color: #edf2f7;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .navbar-menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar-menu li {
+        display: inline;
+      }
+
+      .navbar-menu a {
+        font-size: 1rem;
+        color: #edf2f7;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .navbar-menu a:hover {
+        background-color: #4a5568;
+      }
+
+      /* Blog Section Styles */
+      .blog-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+      }
+
+      .blog-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+        background-color: #1a202c;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .blog-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .blog-date {
+        font-weight: bold;
+        color: #a0aec0;
+        border-bottom: 2px solid #667eea;
+      }
+
+      .blog-title {
+        color: #edf2f7;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .blog-category {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #667eea;
+      }
+
+      .blog-content {
+        color: #cbd5e0;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+      }
+
+      .author img {
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .author-name {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #edf2f7;
+      }
+    </style>
+
+    <!-- Blog Section -->
+    <section class="text-gray-400 bg-gray-900 body-font blog-container"> 
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -mx-4 -my-8">
+
+          <!-- Blog 1: How to Clean Your Car Easily -->
+          <div class="py-8 px-4 lg:w-1/2 blog-card">
+            <div class="h-full flex items-start">
+              <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                <span class="text-gray-400 pb-2 mb-2 blog-date">Sep</span>
+                <span class="font-medium text-lg leading-none text-white">15</span>
+              </div>
+              <div class="flex-grow pl-6">
+                <h2 class="tracking-widest text-xs title-font font-medium blog-category">Tips</h2>
+                <h1 class="title-font text-xl font-medium blog-title">How to Clean Your Car Easily</h1>
+                <p class="leading-relaxed blog-content">Keeping your car clean doesn't have to be a hassle. Start by vacuuming the interior to remove loose dirt and debris. Use a mild detergent and a microfiber cloth to clean the dashboard and other surfaces. For the exterior, wash your car with a high-quality car soap and a soft sponge. Rinse thoroughly and dry with a clean towel to prevent water spots. Regular cleaning will help maintain your car's appearance and value.</p>
+                <a class="inline-flex items-center author">
+                  <img alt="blog" src="https://dummyimage.com/103x103" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-3">
+                    <span class="author-name">Alper Kamu</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog 2: How to Maintain Your Car -->
+          <div class="py-8 px-4 lg:w-1/2 blog-card">
+            <div class="h-full flex items-start">
+              <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                <span class="text-gray-400 pb-2 mb-2 blog-date">Sep</span>
+                <span class="font-medium text-lg leading-none text-white">15</span>
+              </div>
+              <div class="flex-grow pl-6">
+                <h2 class="tracking-widest text-xs title-font font-medium blog-category">Maintenance</h2>
+                <h1 class="title-font text-xl font-medium blog-title">How to Maintain Your Car</h1>
+                <p class="leading-relaxed blog-content">Regular maintenance is key to keeping your car running smoothly. Ensure you check and change the oil regularly, as well as the air filter and spark plugs. Keep an eye on your car's fluids, including brake fluid, transmission fluid, and coolant. Additionally, monitor tire pressure and tread depth to ensure safety and performance. Following a maintenance schedule and addressing issues promptly can extend your car's lifespan and improve its performance.</p>
+                <a class="inline-flex items-center author">
+                  <img alt="blog" src="https://dummyimage.com/102x102" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-3">
+                    <span class="author-name">Holden Caulfield</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.body.insertAdjacentHTML('beforeend', data);
+        });
+    </script>
+</body>
+</html>

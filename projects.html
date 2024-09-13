@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Car Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Styles for the header */
+      header {
+        background-color: #1a202c;
+      }
+
+      /* Gallery Section Styles */
+      .gallery-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+      }
+
+      .gallery-item {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.25;
+      }
+
+      .gallery-content {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .gallery-title {
+        color: #edf2f7;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .gallery-description {
+        color: #e2e8f0;
+        margin-bottom: 15px;
+      }
+
+      .gallery-link {
+        color: #63b3ed;
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .gallery-link:hover {
+        color: #3182ce;
+      }
+
+      .gallery-link svg {
+        margin-left: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Car Garage</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+            <li><a href="blog.html" class="hover:text-gray-400">Blog</a></li>
+            <li><a href="services.html" class="hover:text-gray-400">Services</a></li>
+            <li><a href="projects.html" class="hover:text-gray-400">Projects</a></li>
+            <li><a href="team.html" class="hover:text-gray-400">Our Team</a></li>
+            <li><a href="contactus.html" class="hover:text-gray-400">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="gallery-container text-gray-400 bg-gray-900 body-font">
+      <div class="flex flex-wrap">
+        <div class="lg:w-2/3 mx-auto">
+          <div class="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4 gallery-item">
+            <img alt="project" src="e1.jpeg">
+            <div class="gallery-content">
+              <h2 class="gallery-title">Engine Overhaul</h2>
+              <p class="gallery-description">Comprehensive engine inspection and repair to ensure optimal performance and longevity.</p>
+              <a href="#" class="gallery-link">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-2">
+            <div class="px-2 w-1/2 gallery-item">
+              <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                <img alt="project" src="e2.jpeg">
+                <div class="gallery-content">
+                  <h2 class="gallery-title">Suspension Repair</h2>
+                  <p class="gallery-description">Professional suspension system repair to enhance vehicle stability and ride comfort.</p>
+                  <a href="#" class="gallery-link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 w-1/2 gallery-item">
+              <div class="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
+                <img alt="project" src="e3.jpeg">
+                <div class="gallery-content">
+                  <h2 class="gallery-title">Transmission Service</h2>
+                  <p class="gallery-description">Expert transmission servicing to ensure smooth gear shifts and vehicle performance.</p>
+                  <a href="#" class="gallery-link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.body.insertAdjacentHTML('beforeend', data);
+        });
+    </script>  
+  </body>
+</html>
